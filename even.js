@@ -17,7 +17,11 @@ app.listen(process.env.PORT || 3000,(error)=>{
     }
 })
 
-for(var i=1,n=100;i<=n;i++)
+app.get("/even",(req,res)=>{
+
+    res.send("Even numbers are:")
+
+    for(var i=1,n=100;i<=n;i++)
 {
     if(i%2==0)
 
@@ -26,3 +30,5 @@ for(var i=1,n=100;i<=n;i++)
     console.log(i);
     }
 }
+})
+
