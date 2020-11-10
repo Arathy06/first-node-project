@@ -1,4 +1,24 @@
 
+
+
+var express = require('express')
+
+var app=express()
+
+
+
+app.listen(process.env.PORT || 3000,(error)=>{
+
+    if(error)
+    {
+        console.log("Error occured")
+    }
+    else
+    {
+        console.log("Server started")
+    }
+})
+
 var x=140;
 var y=19;
 var z=300;
